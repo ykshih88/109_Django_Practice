@@ -20,7 +20,7 @@ from myapp import views
 urlpatterns = [
     path('admin', admin.site.urls),
     path('get_id', views.get_id),
-    path('rating', admin.site.urls),
+    path('rating', views.insert_id),
     path('delete', admin.site.urls),
     path('update', admin.site.urls),
 ]
