@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin', admin.site.urls),
     path('get_id', views.get_id),
     path('rating', views.insert_id),
-    path('delete', admin.site.urls),
-    path('update', admin.site.urls),
+    path('delete', views.delete),
+    path('update', views.update),
 ]

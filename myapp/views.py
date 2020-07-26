@@ -36,3 +36,12 @@ def insert_id(request):
         user_temp['rating']=i.rating
         userList.append(user_temp)
     return JsonResponse({'data': userList})
+
+def delete(request):
+    user_id=request.GET.get('user_id')
+    movie_id=request.GET.get('movie_id')
+    result=Ratings.objects.filter(user_id=user_id,movie_id=movie_id).delete()
+    return HttpResponse(result) 
+
+def update(request):
+    pass
