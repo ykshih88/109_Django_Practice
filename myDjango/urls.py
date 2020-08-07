@@ -23,4 +23,5 @@ urlpatterns = [
     path('rating', views.insert_id),
     path('delete', views.delete),
     path('update', views.update),
+    path('GUI', views.GUI)
 ]
